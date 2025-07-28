@@ -2,41 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* GreenCoin Futuristic Web3 Design System
+All colors MUST be HSL. Glassmorphism, neumorphism, and 3D-inspired elements.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core background and foreground */
+    --background: 220 25% 5%;
+    --foreground: 120 15% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Glass morphism surfaces */
+    --glass: 120 20% 10%;
+    --glass-border: 120 30% 25%;
+    --glass-foreground: 120 10% 90%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Card surfaces with slight transparency */
+    --card: 120 15% 8%;
+    --card-foreground: 120 10% 92%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Popover surfaces */
+    --popover: 120 20% 6%;
+    --popover-foreground: 120 10% 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Primary green theme */
+    --primary: 120 55% 45%;
+    --primary-glow: 120 70% 60%;
+    --primary-foreground: 0 0% 0%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Secondary earth tones */
+    --secondary: 30 25% 15%;
+    --secondary-foreground: 120 15% 85%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Muted surfaces */
+    --muted: 120 15% 12%;
+    --muted-foreground: 120 8% 65%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Accent neon blue */
+    --accent: 200 100% 60%;
+    --accent-glow: 200 100% 75%;
+    --accent-foreground: 220 25% 5%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Destructive/error states */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    /* Borders and inputs with glow */
+    --border: 120 20% 20%;
+    --input: 120 15% 10%;
+    --ring: 120 55% 45%;
+
+    /* Earth accent color */
+    --earth: 35 45% 35%;
+    --earth-light: 35 50% 50%;
+
+    /* Neon effects */
+    --neon-green: 120 100% 50%;
+    --neon-blue: 200 100% 60%;
+    --neon-purple: 280 100% 70%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(120 55% 45%) 0%, hsl(120 70% 60%) 100%);
+    --gradient-earth: linear-gradient(135deg, hsl(35 45% 35%) 0%, hsl(120 55% 45%) 100%);
+    --gradient-space: linear-gradient(135deg, hsl(220 25% 5%) 0%, hsl(120 15% 8%) 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(220 25% 5%) 0%, hsl(120 20% 8%) 50%, hsl(35 30% 10%) 100%);
+
+    /* Shadows and glows */
+    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.15);
+    --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.2);
+    --shadow-glow: 0 0 30px hsl(120 55% 45% / 0.3);
+    --shadow-accent-glow: 0 0 30px hsl(200 100% 60% / 0.3);
+    --shadow-inset: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -55,43 +98,130 @@ All colors MUST be HSL.
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
+@layer components {
+  /* Glass morphism utility classes */
+  .glass {
+    @apply bg-glass/20 backdrop-blur-xl border border-glass-border/30;
+    background: var(--gradient-glass);
+    box-shadow: var(--shadow-glass);
+  }
+
+  .glass-card {
+    @apply glass rounded-2xl p-6 transition-all duration-300;
+  }
+
+  .glass-card:hover {
+    @apply border-glass-border/50;
+    box-shadow: var(--shadow-glass), var(--shadow-glow);
+  }
+
+  /* Neumorphism utility classes */
+  .neomorph {
+    background: linear-gradient(145deg, hsl(var(--card)), hsl(var(--muted)));
+    box-shadow: 
+      20px 20px 40px rgba(0,0,0,0.2), 
+      -20px -20px 40px rgba(255,255,255,0.02);
+  }
+
+  .neomorph-inset {
+    background: linear-gradient(145deg, hsl(var(--muted)), hsl(var(--card)));
+    box-shadow: var(--shadow-inset);
+  }
+
+  /* Glowing button variants */
+  .btn-glow {
+    @apply relative overflow-hidden transition-all duration-300;
+    background: var(--gradient-primary);
+    box-shadow: var(--shadow-glow);
+  }
+
+  .btn-glow:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow), 0 10px 30px rgba(0,0,0,0.2);
+  }
+
+  .btn-glow:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: var(--transition-smooth);
+  }
+
+  .btn-glow:hover:before {
+    left: 100%;
+  }
+
+  /* Accent glow button */
+  .btn-accent-glow {
+    @apply relative overflow-hidden transition-all duration-300;
+    background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--accent-glow)) 100%);
+    box-shadow: var(--shadow-accent-glow);
+  }
+
+  /* Floating animation */
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  /* Pulse glow animation */
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes pulse-glow {
+    from { box-shadow: var(--shadow-glow); }
+    to { 
+      box-shadow: 
+        var(--shadow-glow), 
+        0 0 60px hsl(var(--primary) / 0.5),
+        0 0 90px hsl(var(--primary) / 0.3);
+    }
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Gradient borders */
+  .gradient-border {
+    position: relative;
+  }
+
+  .gradient-border:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    background: var(--gradient-primary);
+    border-radius: inherit;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+  }
+
+  /* 3D transform utilities */
+  .transform-3d {
+    transform-style: preserve-3d;
+  }
+
+  .perspective {
+    perspective: 1000px;
+  }
+}
 }
 
 @layer base {
