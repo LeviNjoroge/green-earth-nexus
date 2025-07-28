@@ -97,8 +97,7 @@ All colors MUST be HSL. Glassmorphism, neumorphism, and 3D-inspired elements.
 
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
-
-  }
+}
 
 @layer components {
   /* Glass morphism utility classes */
@@ -221,7 +220,6 @@ All colors MUST be HSL. Glassmorphism, neumorphism, and 3D-inspired elements.
   .perspective {
     perspective: 1000px;
   }
-}
 }
 
 @layer base {
