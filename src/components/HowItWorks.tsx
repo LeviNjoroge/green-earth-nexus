@@ -1,7 +1,11 @@
 import { Leaf, Satellite, Coins, ArrowRight } from "lucide-react";
 import sustainableFarm from "@/assets/sustainable-farm.jpg";
+import farm from "@/assets/farm.png";
 import satelliteVerification from "@/assets/satellite-verification.jpg";
 import blockchainRewards from "@/assets/blockchain-rewards.jpg";
+import greenCoinRevolution from "@/assets/GreenCoin_ A Digital Revolution.png";
+import grow from "@/assets/grow.png";
+import impact from "@/assets/impact.png";
 
 export const HowItWorks = () => {
   const steps = [
@@ -9,22 +13,29 @@ export const HowItWorks = () => {
       icon: Leaf,
       title: "Farm Sustainably",
       description: "Farmers register their land and agricultural practices through our secure platform, providing GPS coordinates, farm size, and current practices.",
-      image: sustainableFarm,
+      image: farm,
       color: "primary"
     },
     {
       icon: Satellite,
       title: "Proof of Impact",
       description: "Advanced satellite monitoring, IoT sensors, and field sampling techniques automatically track carbon sequestration, emission reductions, and your environmental impact.",
-      image: satelliteVerification,
+      image: impact,
       color: "accent"
     },
     {
       icon: Coins,
       title: "Earn GreenCoins",
       description: "Verified carbon reductions are converted to tradeable tokens on the ICP blockchain, Farmers instantly receive blockchain-verified rewards directly to their wallet,providing transparent and immutable records.",
-      image: blockchainRewards,
+      image: greenCoinRevolution,
       color: "neon-green"
+    },
+    {
+      icon: ArrowRight,
+      title: "Get Paid & Grow",
+      description: "Receive your GreenCoin rewards directly to your wallet. Use your tokens for farm supplies, local currency, or reinvest in sustainable practices. Watch your impact and income grow year after year.",
+      image: grow,
+      color: "primary"
     }
   ];
 
@@ -40,7 +51,7 @@ export const HowItWorks = () => {
               How <span className="gradient-text">GreenCoin</span> Works
             </h2>
             <p className="text-xl text-muted-foreground font-dm-sans max-w-3xl mx-auto">
-              Three simple steps to transform your sustainable farming into verified income
+              Four simple steps to transform your sustainable farming into verified income
             </p>
             <div className="w-32 h-1 bg-gradient-to-r from-primary via-accent to-neon-green rounded-full mx-auto" />
           </div>

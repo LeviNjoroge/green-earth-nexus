@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Sparkles } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
-import greenCoinToken from "@/assets/greencoin-token.jpg";
+import luminous from "@/assets/luminous.png";
 
 export const HeroSection = () => {
   return (
@@ -60,8 +60,8 @@ export const HeroSection = () => {
             <div className="glass-card max-w-md mx-auto p-8 perspective">
               <div className="transform-3d hover:rotate-y-12 transition-transform duration-700">
                 <img 
-                  src={greenCoinToken} 
-                  alt="GreenCoin Token" 
+                  src={luminous} 
+                  alt="Luminous Token" 
                   className="w-full h-auto rounded-2xl shadow-2xl pulse-glow"
                 />
               </div>
