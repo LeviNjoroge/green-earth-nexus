@@ -32,15 +32,17 @@ export const AboutSection = () => {
 
               <div className="space-y-6 text-lg leading-relaxed text-muted-foreground font-dm-sans">
                 <p>
-                  <strong className="text-foreground">GreenCoin</strong> is a revolutionary blockchain platform that directly rewards smallholder farmers for their environmental stewardship and climate-smart agricultural practices.
+                <strong className="text-foreground">GreenCoin</strong> is a blockchain-powered platform that rewards farmers with tokens for climate-friendly practices. Using satellite data, IoT sensors, and smart verification, it turns real on-farm impact into tradeable carbon credits.
+                </p>
+
+                
+                <p>
+                  Built on the <strong className="text-primary">Internet Computer Protocol</strong>, Farmers who adopt sustainable methods such as agroforestry, organic composting, reduced tillage, and renewable energy are rewarded with GreenCoins, a digital token built on (ICP). These tokens represent verified carbon credits and can be used to purchase farm inputs, exchanged for local currency, or reinvested in sustainable innovations.
                 </p>
                 
                 <p>
-                  Built on the <strong className="text-primary">Internet Computer Protocol</strong>, we use cutting-edge satellite monitoring and AI verification to automatically track and reward sustainable farming activities with transparent, instant blockchain payments.
-                </p>
-                
-                <p>
-                  Our mission is to democratize access to climate finance, ensuring that the <strong className="text-foreground">farmers healing our planet</strong> finally benefit from the value they create.
+                  <strong className="text-foreground">GreenCoin</strong> is more than a token—it's a catalyst for climate-smart, tech-powered farming. Every sustainable action becomes a verified, tradeable impact, turning farms into engines of environmental and economic growth.<br/>
+                  Our mission is to democratize access to climate finance, ensuring the farmers healing our planet finally benefit from the value they create.
                 </p>
               </div>
 
