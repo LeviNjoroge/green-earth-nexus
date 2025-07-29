@@ -40,7 +40,7 @@ export const HeroSection = () => {
             </p>
             
             <p className="text-xl md:text-2xl text-muted-foreground font-dm-sans max-w-3xl mx-auto leading-relaxed">
-              Turn your sustainable farm actions into income with blockchain-verified rewards for climate-smart agriculture.
+              Turn your sustainable farm actions into income with  blockchain-verified Carbon Credits Token rewards for climate-smart agriculture.
             </p>
           </div>
 

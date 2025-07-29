@@ -2,17 +2,80 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export const FAQSection = () => {
   const faqs = [
+     
+    {
+      question: "What are Greencoin carbon credits and how do they work?",
+      answer: "Carbon credits represent one metric ton of CO₂ equivalent that has been removed from the atmosphere or prevented from being emitted. When farmers adopt climate-smart practices like agroforestry or no-till farming, they increase carbon storage in soil and biomass. These verified carbon reductions can be converted into tradeable Greencoin Token credits that companies purchase to offset their emissions. Each credit you generate represents real environmental impact and provides additional income for sustainable farming practices."
+    },
     {
       question: "How do I start earning GreenCoins?",
       answer: "Simply download our mobile app, register your farm, and begin implementing climate-smart practices. Our satellite monitoring system will automatically detect your sustainable activities and reward you with GreenCoins."
     },
     {
-      question: "What qualifies as climate-smart farming?",
-      answer: "We recognize various sustainable practices including cover cropping, agroforestry, reduced tillage, rotational grazing, organic farming, water conservation, soil carbon sequestration, and renewable energy use on farms."
-    },
+  question: "What Climate-Smart farming practices qualify for carbon credits?",
+  answer: (
+    <div>
+      <p style={{ margin: "0 0 15px 0", lineHeight: 1.6, color: "var(--secondary)" }}>
+        We support a wide range of climate-smart agricultural practices:
+      </p>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+          gap: "15px",
+          margin: "15px 0",
+        }}
+      >
+        <div>
+          <strong style={{ color: "var(--primary)" }}>Soil Management:</strong>
+          <ul style={{ margin: "5px 0", paddingLeft: "15px" }}>
+            <li>No-till farming</li>
+            <li>Reduced tillage</li>
+            <li>Cover cropping</li>
+            <li>Crop rotation</li>
+          </ul>
+        </div>
+        <div>
+          <strong style={{ color: "var(--primary)" }}>Agroforestry:</strong>
+          <ul style={{ margin: "5px 0", paddingLeft: "15px" }}>
+            <li>Tree intercropping</li>
+            <li>Silvopasture</li>
+            <li>Windbreaks</li>
+            <li>Buffer strips</li>
+          </ul>
+        </div>
+        <div>
+          <strong style={{ color: "var(--primary)" }}>Other Practices:</strong>
+          <ul style={{ margin: "5px 0", paddingLeft: "15px" }}>
+            <li>Composting</li>
+            <li>Improved grazing</li>
+            <li>Wetland restoration</li>
+            <li>Efficient irrigation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  ),
+},
     {
       question: "How is my data verified?",
-      answer: "We use a combination of satellite imagery, AI analysis, and IoT sensors to verify farming practices. This creates an immutable record on the blockchain, ensuring transparent and accurate reward distribution."
+      answer: "GreenCoin verifies your data through a multi-step process. First, eco-friendly farming data is collected via sensors, images, or GPS. Then, AI and satellite tools analyze your carbon-reducing activities. In some cases, field officers visit for on-ground verification. Once confirmed, your data is stored securely on the blockchain. Verified actions are converted into carbon credits, and you earn GreenCoin tokens as rewards. This ensures fairness, accuracy, and transparency across the platform."
+    },
+
+    {
+      question: "How long does it take to get paid?",
+      answer: (
+        <div>
+          <p style={{ margin: 0, lineHeight: 1.6, color: "var(--secondary)" }}>
+            The payment timeline depends on verification requirements:<br /><br />
+            <strong>Initial Setup:</strong> 4-6 weeks for registration and baseline measurements<br />
+            <strong>First Payment:</strong> 6-12 months after implementation (varies by practice)<br />
+            <strong>Ongoing Payments:</strong> Annual payments after verification<br />
+            <strong>Marketplace Sales:</strong> 2-14 days after listing credits for sale<br /><br />
+            Fast-growing practices like cover crops can generate credits within 6 months, while tree-based systems may take 12-18 months for first payments but offer higher long-term returns.
+          </p>
+        </div>
+      ),
     },
     {
       question: "Can I use GreenCoins like regular money?",
@@ -26,13 +89,49 @@ export const FAQSection = () => {
       question: "How much can I earn with GreenCoins?",
       answer: "Earnings depend on your farm size, practices implemented, and environmental impact. Early farmers in our pilot program have earned between $200-$2000 per year, with potential for higher rewards as the platform scales."
     },
+
+    {
+      question: "What if I'm not tech-savvy? Can I still participate?",
+      answer: (
+        <div>
+          <p style={{ margin: 0, lineHeight: 1.6, color: "var(--secondary)" }}>
+            Absolutely! We provide extensive support for farmers at all technology levels:<br /><br />
+            <strong>On-ground support:</strong> Local field officers provide hands-on assistance<br />
+            <strong>Training programs:</strong> In-person workshops in local languages<br />
+            <strong>Simple tools:</strong> Mobile apps designed for basic phones<br />
+            <strong>Community groups:</strong> Farmer cooperatives for peer learning<br />
+            <strong>24/7 support:</strong> Phone and SMS support in Swahili, English, and local languages<br /><br />
+            Many of our most successful farmers started with minimal technology experience. We'll guide you through every step of the process.
+          </p>
+        </div>
+      ),
+    },
+
+    {
+      question: "How much money can I earn from carbon credits?",
+      answer: (
+        <div>
+          <p style={{ margin: "0 0 15px 0", lineHeight: 1.6, color: "var(--secondary)" }}>
+            Earnings depend on your farm size, practices implemented, and local conditions. Typical ranges are:
+          </p>
+          <ul style={{ margin: 0, paddingLeft: 20, color: "var(--secondary)" }}>
+            <li><strong>Small farms (0.5-2 ha):</strong> $150-800 per year</li>
+            <li><strong>Medium farms (2-10 ha):</strong> $800-4,000 per year</li>
+            <li><strong>Large farms (10+ ha):</strong> $4,000+ per year</li>
+          </ul>
+          <p style={{ margin: "15px 0 0 0", lineHeight: 1.6, color: "var(--secondary)" }}>
+            Agroforestry typically generates the highest returns, while practices like no-till provide steady, long-term income. Most farmers see 25-45% increase in total farm income within 3 years.
+          </p>
+        </div>
+      ),
+    },
     {
       question: "Is GreenCoin secure and legitimate?",
       answer: "Absolutely. Built on the Internet Computer Protocol, all transactions are recorded on-chain with cryptographic security. We're partnered with recognized climate organizations and follow international environmental standards."
     },
     {
       question: "What farming data do you collect?",
-      answer: "We only collect data necessary for verification: satellite images of your land, farming practice timestamps, and environmental impact metrics. All data is encrypted and you maintain full ownership and control."
+      answer: "We only collect data necessary for verification: GreenCoin collects essential farming data to accurately assess your environmental impact and reward you with carbon credits. This includes information such as crop types, land size, soil health, irrigation methods, fertilizer usage, tree planting activities, and tillage practices. By analyzing these inputs, GreenCoin determines how much carbon your farming methods are reducing or sequestering. This data is securely stored and verified through blockchain technology to ensure transparency and fairness. Accurate data collection enables you to earn GreenCoin tokens based on your sustainable actions, helping you benefit financially while contributing to a greener planet."
     }
   ];
 

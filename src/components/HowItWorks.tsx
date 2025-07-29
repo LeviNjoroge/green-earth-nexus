@@ -8,25 +8,27 @@ export const HowItWorks = () => {
     {
       icon: Leaf,
       title: "Farm Sustainably",
-      description: "Use climate-smart practices like cover crops, agroforestry, and regenerative techniques",
+      description: "Farmers register their land and agricultural practices through our secure platform, providing GPS coordinates, farm size, and current practices.",
       image: sustainableFarm,
       color: "primary"
     },
     {
       icon: Satellite,
       title: "Proof of Impact",
-      description: "Satellite monitoring and AI verification automatically track your environmental impact",
+      description: "Advanced satellite monitoring, IoT sensors, and field sampling techniques automatically track carbon sequestration, emission reductions, and your environmental impact.",
       image: satelliteVerification,
       color: "accent"
     },
     {
       icon: Coins,
       title: "Earn GreenCoins",
-      description: "Instantly receive blockchain-verified rewards directly to your wallet",
+      description: "Verified carbon reductions are converted to tradeable tokens on the ICP blockchain, Farmers instantly receive blockchain-verified rewards directly to their wallet,providing transparent and immutable records.",
       image: blockchainRewards,
       color: "neon-green"
     }
   ];
+
+
 
   return (
     <section className="py-24 relative overflow-hidden">
