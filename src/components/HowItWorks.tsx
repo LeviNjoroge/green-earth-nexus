@@ -6,6 +6,8 @@ import blockchainRewards from "@/assets/blockchain-rewards.jpg";
 import greenCoinRevolution from "@/assets/GreenCoin_ A Digital Revolution.png";
 import grow from "@/assets/grow.png";
 import impact from "@/assets/impact.png";
+import earn from "@/assets/Earn Green.png";
+import coin from "@/assets/earn.png";
 
 export const HowItWorks = () => {
   const steps = [
@@ -27,7 +29,7 @@ export const HowItWorks = () => {
       icon: Coins,
       title: "Earn GreenCoins",
       description: "Verified carbon reductions are converted to tradeable tokens on the ICP blockchain, Farmers instantly receive blockchain-verified rewards directly to their wallet,providing transparent and immutable records.",
-      image: greenCoinRevolution,
+      image: coin,
       color: "neon-green"
     },
     {

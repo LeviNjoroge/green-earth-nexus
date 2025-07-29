@@ -1,6 +1,6 @@
 import { Globe, Target, Heart, Award } from "lucide-react";
 import greenCoinToken from "@/assets/greencoin-token.jpg";
-
+import greencoin from "@/assets/earn.png";
 export const AboutSection = () => {
   const partners = [
     { name: "Internet Computer", logo: "🌐" },
@@ -80,7 +80,7 @@ export const AboutSection = () => {
               <div className="glass-card p-8 perspective">
                 <div className="transform-3d hover:rotate-y-12 transition-transform duration-700">
                   <img 
-                    src={greenCoinToken} 
+                    src={greencoin} 
                     alt="GreenCoin Platform" 
                     className="w-full h-auto rounded-2xl shadow-2xl pulse-glow"
                   />
