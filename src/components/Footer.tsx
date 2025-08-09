@@ -98,10 +98,10 @@ export const Footer = () => {
             {/* Copyright */}
             <div className="text-center md:text-left">
               <p className="text-sm text-muted-foreground font-dm-sans">
-                © 2024 GreenCoin. Building the future of sustainable agriculture.
+                © 2025 GreenCoin. Building the future of sustainable agriculture.
               </p>
               <p className="text-xs text-muted-foreground font-dm-sans mt-1">
-                Made with 🌱 for farmers worldwide
+                Made with 🌱 for farmers worldwide 
               </p>
             </div>
 
